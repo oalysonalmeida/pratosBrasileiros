@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Define o tipo de documento como HTML5 e especifica o idioma como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a viewport para garantir que a página seja exibida corretamente em dispositivos móveis -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para o arquivo CSS externo, que contém os estilos da página -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Inclui a biblioteca de ícones Font Awesome para usar ícones de redes sociais -->
+    
+    <title>Meu Projeto Alura</title>
+    <!-- Define o título da página que aparecerá na aba do navegador -->
+</head>
+
+<body>
+    <!-- Início do corpo da página -->
+    
+    <header>
+        <h1>Pratos Brasileiros</h1>
+        <!-- Cabeçalho da página com um título principal -->
+    </header>
+    
+    <main>
+        <!-- Início da área principal do conteúdo -->
+        
+        <section>
+            <!-- Seção contendo o campo de pesquisa e o botão -->
+            
+            <input type="text" placeholder="Digite o nome do prato ou região brasileira" id="campo-pesquisa">
+            <!-- Campo de entrada de texto para o usuário digitar o nome de um prato ou região brasileira -->
+            
+            <button onclick="pesquisar()">Pesquisar</button>
+            <!-- Botão de pesquisa que chama a função `pesquisar()` quando clicado -->
+        </section>
+        
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- Seção que exibirá os resultados da pesquisa, inicialmente vazia -->
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Rodapé da página -->
+        
+        <p>2024 - Pratos Brasileiros - Todos os direitos reservados</p>
+        <!-- Texto de direitos autorais -->
+        
+        <p>Entre em contato conosco pelas nossas redes</p>
+        <!-- Texto incentivando o contato via redes sociais -->
+        
+        <div class="social-icons">
+            <!-- Div que contém os ícones de redes sociais -->
+            
+            <a href="https://www.instagram.com/alysonalmeida" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <!-- Link para o Instagram com o ícone correspondente, abre em nova aba -->
+            
+            <a href="https://www.linkedin.com/in/alyson-almeida-591794312/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Link para o LinkedIn com o ícone correspondente, abre em nova aba -->
+            
+            <a href="https://github.com/devalysonalmeida" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- Link para o GitHub com o ícone correspondente, abre em nova aba -->
+            
+            <a href="https://wa.me/5581995314541" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- Link para o WhatsApp com o ícone correspondente, abre em nova aba -->
+        </div>
+    </footer>
+    
+    <script src="dados.js"> </script>
+    <!-- Inclui o arquivo de script `dados.js`, que provavelmente contém dados dos pratos -->
+    
+    <script src="app.js"> </script>
+    <!-- Inclui o arquivo de script `app.js`, que provavelmente contém a lógica para o funcionamento da pesquisa -->
+</body>
+
+</html>

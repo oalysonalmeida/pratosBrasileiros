@@ -1,0 +1,141 @@
+let dados = [
+    // Cada objeto dentro desse array representa um prato típico brasileiro com seu título, descrição, link e tags associadas
+{
+    titulo : "Tacacá",
+    descricao : "O tacacá é um prato de origem indígena típico da Região Amazônica. É muito apreciado em várias localidades da região Norte do Brasil, sendo principalmente produzido e consumido no Pará",
+    link : "https://pt.wikipedia.org/wiki/Tacac%C3%A1",
+    tags: "norte região norte pará tacaca",
+},
+{
+    titulo : "Pato no Tucupi",
+    descricao : "Pato no tucupi é um prato brasileiro típico da culinária da região Norte do Brasil. É elaborado com carne de pato selvagem banhada com tucupi - líquido de cor amarela extraído da raiz da mandioca brava - temperado com jambu, erva típica da região Norte. Há preferência de acompanhamento com arroz branco cozido e também farinha-d'água de mandioca",
+    link : "https://pt.wikipedia.org/wiki/Pato_no_tucupi",
+    tags : "região norte pato tucupi",
+},
+{
+    titulo : "Maniçoba",
+    descricao : "A Maniçoba é um prato de origem indígena, típico da culinária paraense e amapaense. Pela origem da folha de que é produzido, surgiu provavelmente entre aldeias indígenas no norte brasileiro, embora seja comumente apontado como uma comida paraense. Tem como principal ingrediente a maniva, a folha da mandioca moída",
+    link : "https://pt.wikipedia.org/wiki/Mani%C3%A7oba",
+    tags : "Região Norte norte pará amapá manicoba",
+},
+{
+    titulo: "Tucunaré Assado",
+    descricao : "O tucunaré é um peixe nativo da bacia amazônica, sendo encontrado em rios e lagos de água doce da região. Com sua carne saborosa e textura firme, o tucunaré se tornou um dos peixes mais apreciados pelos pescadores e amantes da culinária",
+    link : "https://harmoniafitness.com/glossario/o-que-e-tucunare-assado/",
+    tags : "Região Norte norte tucunare peixe amazonas",
+},
+{
+    titulo : "Pirarucu à casaca",
+    descricao : "Pirarucu à casaca, ou pirarucu de casaca é uma receita típica do Amazonas, com fortes influências da gastronomia indígena. Trata-se de um prato de peixe preparado com o chamado 'bacalhau do Amazonas' desfiado e misturado com vários ingredientes, tais como farinha uarini ova, leite de coco, banana e muito mais, que rende uma refeição completa",
+    link : "https://www.tudoreceitas.com/receita-de-pirarucu-a-casaca-3418.html",
+    tags : "Região Norte norte pirarucu peixe amazonas",
+},
+{
+  titulo : "Acarajé",
+  descricao : "O acarajé é uma especialidade gastronômica das culinárias africana e afro-brasileira. Trata-se de um bolinho feito de massa de feijão-fradinho, cebola e sal, e frito em azeite de dendê",
+  link : "https://pt.wikipedia.org/wiki/Acaraj%C3%A9",
+  tags : "Região Nordeste nordeste acaraje ",
+},
+{
+    titulo : "Bolo de Rolo",
+    descricao : "O bolo de rolo é um doce brasileiro, típico de Pernambuco. A massa é feita com farinha de trigo, ovos, manteiga e açúcar. Essa massa é enrolada com uma camada de goiabada derretida, dando a aparência de um rocambole, embora dele difira em vários detalhes, especialmente no preparo, específico no bolo de rolo e completamente diferente do rolo suíço, com as camadas de massa e goiabada bem finas e o sabor característico",
+    link : "https://pt.wikipedia.org/wiki/Bolo_de_rolo",
+    tags : "Região Nordeste nordeste bolo de rolo",
+  },
+{
+    titulo : "Moqueca",
+    descricao : "É prato típico dos estados do Pará, da Bahia e do Espírito Santo. Pode ser preparada com peixe, mariscos, crustáceos, galinha ou ovos de galinha",
+    link : "https://pt.wikipedia.org/wiki/Moqueca",
+    tags : "Região Nordeste nordeste peixe para bahia espirito santo",
+},
+{
+    titulo : "Vatapá",
+    descricao : "O vatapá é um prato típico da culinária baiana, conhecido por ser delicioso e cheio de sabores intensos. Ele é feito à base de pão amanhecido, camarões, castanhas de caju,  leite de coco, dendê e diversos temperos",
+    link : "https://viverdebrigadeiro.com.br/glossario/o-que-e-vatapa/",
+    tags : "Região Nordeste nordeste vatapa bahia",
+},
+{
+    titulo : "Bobó de Camarão",
+    descricao : "Como boa parte dos pratos da cozinha baiana, o bobó de camarão é herança africana. Quer dizer, sua base vem dos povos que atravessaram o Atlântico, mas acabou sendo adaptado em terras locais, o que o caracteriza como uma iguaria afro-brasileira",
+    link : "https://www.uol.com.br/nossa/noticias/redacao/2022/06/28/bobo-de-camarao-e-mais-prato-com-tempero-baiano-esquenta-de-norte-a-sul.htm",
+    tags : "Região Nordeste nordeste bobo de camarao bahia",
+},
+{
+    titulo: "Sarapatel",
+    descricao: "Um prato típico da culinária do Piauí é o tradicional sarapatel. Uma receita que leva vísceras e sangue do bode, além de várias especiarias regionais",
+    link : "https://g1.globo.com/pi/piaui/piaui-de-riquezas/noticia/2022/04/30/sarapatel-saiba-como-preparar-iguaria-de-origem-portuguesa-de-diferentes-formas-e-que-conquistou-os-piauienses.ghtml",
+    tags : "Região Nordeste nordeste piaui",
+},
+{
+    titulo: "Arroz de Cuxá",
+    descricao: "Cuxá é um molho da culinária maranhense, feito com vinagreira, gergelim, camarão seco, farinha de mandioca seca e pimenta-de-cheiro, ingredientes encontrados com fartura na região. Além do seu caráter regional, o preparo do cuxá utiliza o recurso do pilão, utensílio típico da cozinha brasileira, para socar o alimento. Costuma acompanhar o arroz de cuxá, que é um arroz cozido em água e sal",
+    link : "https://pt.wikipedia.org/wiki/Cux%C3%A1",
+    tags : "Região Nordeste nordeste maranhao arroz de cuxa",
+},
+{
+    titulo : "Tapioca",
+    descricao : "A ideia da tapioca, como a conhecemos hoje, veio da cidade de Olinda, onde se consumia intensamente o beiju, a farinha e a tapioca (goma) extraídos da mandioca, desde o século XVI com a criação portuguesa da Casa de Farinha em Itamaracá",
+    link : "https://saintclairebakery.com.br/conheca-a-origem-da-famosa-tapioca/",
+    tags : "Região Nordeste nordeste pernambuco olinda",
+},
+{
+    titulo : "Carne de Sol",
+    descricao : "A carne de sol, denominada também carne de vento e carne do sertão, é um método de conservar alimentos de origem animal salgando-se e secando-se, em local coberto e bem ventilado, peças de carne, em geral bovina, típica do nordeste brasileiro. Apesar do nome, não é exposta aos raios solares",
+    link : "https://pt.wikipedia.org/wiki/Carne_de_sol",
+    tags : "Região Nordeste nordeste pernambuco sertao",
+},
+{
+    titulo : "Arroz com pequi",
+    descricao : "A origem do arroz juntamente com o pequi está ligada ao processo cultural alimentar do Estado de Goiás, com a junção de práticas culinárias estrangeiras à cultura local pelo uso do arroz (origem asiática) com o pequi (fruta tipicamente brasileira)",
+    link : "https://brejeiro.com.br/noticias/a-origem-do-arroz-com-pequi/#:~:text=A%20origem%20do%20arroz%20juntamente,pequi%20(fruta%20tipicamente%20brasileira).",
+    tags : "Região Centro-Oeste centro oeste goiás",
+},
+{
+    titulo : "Empadão Goiano",
+    descricao : "O empadão goiano é uma torta salgada típica do estado de Goiás com variados recheios. A torta era originalmente chamada de empada ou empada goiana, até que nos anos 80 passou a ser chamada de empadão ou empadão goiano, talvez para distingui-las das empadas e empadinhas que estariam se popularizando",
+    link : "https://pt.wikipedia.org/wiki/Empad%C3%A3o_goiano",
+    tags : "Região Centro-Oeste centro oeste empadao goiano goiás",
+},
+{
+    titulo : "Pacu Assado",
+    descricao : "O pacu assado na folha de bananeira é outro prato típico do Pantanal. Os pantaneiros, acostumados a degustar de peixes frescos, pescados muitas vezes por eles mesmos, preparam pratos repletos de suculência e sabor",
+    link : "https://g1.globo.com/ms/mato-grosso-do-sul/noticia/2022/03/30/culinaria-pantaneira-pacu-assado-na-folha-de-bananeira-transborda-suculencia-e-prova-que-no-pantanal-tudo-se-aproveita.ghtml",
+    tags : "Região Centro-Oeste centro oeste mato grosso",
+},
+{
+    titulo : "Pintado na brasa",
+    descricao : "O prato mais conhecido da culinária piracicabana é o pintado na brasa. E o pintado mais conhecido da cidade é o do Mirante, que leva fama de ter inventado a receita",
+    link : "https://www1.folha.uol.com.br/fsp/turismo/fx1902200905.htm",
+    tags : "Região Sudeste sudeste são paulo sao paulo",
+},
+{
+    titulo : "Feijão tropeiro",
+    descricao : "O feijão-tropeiro é um prato típico da culinária dos estados brasileiros de Minas Gerais, Goiás e São Paulo, criado pelos tropeiros. O prato é composto de feijão cozido misturado com farinha de mandioca, linguiça, toucinho, ovos e vários temperos, como alho, cebola, cheiro-verde e pimenta. Às vezes, o prato é enriquecido com torresmo, couve e bacon",
+    link : "https://pt.wikipedia.org/wiki/Feij%C3%A3o_tropeiro",
+    tags : "Região Sudeste sudeste feijao tropeiro Minas Gerais minas gerais",
+},
+{
+    titulo : "Pão de queijo",
+    descricao : "O pão de queijo é uma iguaria oriunda de Minas Gerais, muito difundida em todo o Brasil. Embora não haja registro de local e época exata de sua criação, há consenso de que tenha se originado em Minas Gerais em meados do Século XVIII",
+    link : "https://pt.wikipedia.org/wiki/P%C3%A3o_de_queijo",
+    tags : "Região Sudeste sudeste pao de queijo Minas Gerais minas gerais",
+},
+{
+    titulo : "Virado",
+    descricao : "É um prato típico do estado brasileiro de São Paulo, onde também é conhecido como Virado à Paulista. Foi criado na época das entradas, bandeiras e monções, no Brasil Colônia",
+    link : "https://pt.wikipedia.org/wiki/Virado",
+    tags : "Região Sudeste sudeste são paulo sao paulo",
+},
+{
+    titulo : "Arroz carreteiro",
+    descricao : "O arroz carreteiro é um prato típico oriundo do Rio Grande do Sul (embora, atualmente, já esteja incorporado à cozinha brasileira, sendo comum saboreá-lo em todo o país). É feito de arroz ao qual se adiciona carne bovina bem picada e refogada, carne-seca ou carne de sol desfiada ou picada, às vezes paio, bacon e linguiça em pedaços, refogados em bastante gordura, com alho, cebola, tomate e cheiro-verde, sempre com bastante tempero. Nas regiões Centro-Oeste e Nordeste do Brasil, é também conhecido como maria-isabel, e preparado com carne de sol",
+    link : "https://pt.wikipedia.org/wiki/Arroz_carreteiro",
+    tags : "Região Sul sul",
+},
+{
+    titulo : "Galeto",
+    descricao : "O galeto é uma refeição típica das zonas de colonização italiana do sudeste-sul do Brasil. O nome real da iguaria na Itália é 'passarinhada', mas no Brasil alguns bares e restaurantes substituem os pássaros por pequenos frangos, abatidos ao décimo dia de nascimento. Em geral são assados na brasa",
+    link : "https://pt.wikipedia.org/wiki/Galeto",
+    tags : "Região Sul sul maria isabel",
+}
+]

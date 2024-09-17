@@ -1,0 +1,200 @@
+/* Importa a fonte Merriweather do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Merriweather', serif; /* Define a fonte principal */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    height: 100vh; /* Altura da página ocupa toda a viewport */
+    background-image: url('sitereceitasfundo.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    display: flex; /* Usa Flexbox para organizar o conteúdo */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    position: relative;
+}
+
+/* Estilo dos títulos principais */
+h1 {
+    font-size: 3rem; /* Define o tamanho da fonte */
+    color: rgb(44, 30, 11); /* Define a cor do texto */
+    text-align: center; /* Alinha o texto no centro */
+    letter-spacing: 0.1rem; /* Define espaçamento entre letras */
+}
+
+/* Estilo para as seções principais */
+section {
+    display: flex; /* Ativa Flexbox */
+    flex-direction: column; /* Alinha itens na vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-bottom: 3rem; /* Define espaçamento inferior */
+}
+
+/* Estilo dos campos de entrada */
+section input {
+    width: 100%; /* Largura total */
+    max-width: 30rem; /* Largura máxima */
+    border: none; /* Remove borda padrão */
+    padding: 1rem; /* Preenchimento interno */
+    border-radius: 1.5rem; /* Bordas arredondadas */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+    color: rgb(79, 79, 79); /* Cor do texto */
+    font-size: 1rem; /* Tamanho do texto */
+    box-sizing: border-box; /* Inclui preenchimento na largura */
+}
+
+/* Estilo dos botões */
+section button {
+    padding: 0.8rem 1.2rem; /* Preenchimento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Bordas arredondadas */
+    background-color: rgb(141, 69, 10); /* Cor de fundo */
+    color: rgb(245, 247, 248); /* Cor do texto */
+    font-size: 1rem; /* Tamanho do texto */
+    cursor: pointer; /* Define o cursor como clicável */
+}
+
+/* Efeito de hover para o botão */
+section button:hover {
+    background-color: rgba(17, 17, 17); /* Muda cor no hover */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Estilo da área de resultados */
+.resultados-pesquisa {
+    width: 60rem; /* Largura da caixa */
+    height: 39vh; /* Altura da caixa */
+    overflow-y: auto; /* Ativa rolagem vertical */
+    margin-top: -1rem; /* Margem superior */
+    padding: 1rem; /* Preenchimento */
+    border-radius: 0.6rem; /* Bordas arredondadas */
+}
+
+/* Estilo de cada item de resultado */
+.item-resultado {
+    background: rgb(249, 245, 240); /* Fundo dos resultados */
+    border: 2px solid rgb(141, 69, 10); /* Borda personalizada */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo do título dos resultados */
+.item-resultado h2 {
+    color: rgb(139, 69, 19); /* Cor do texto */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilo dos links */
+.item-resultado a {
+    text-decoration: none; /* Remove sublinhado */
+    color: rgb(44, 30, 11); /* Cor do texto */
+}
+
+/* Estilo para mensagens de erro */
+.mensagem-erro, .nenhum-resultado {
+    color: rgb(44, 30, 11); /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    border: 2px solid rgba(141, 69, 10, 0.867); /* Borda personalizada */
+    padding: 10px; /* Preenchimento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    margin: 10px auto; /* Centraliza horizontalmente */
+    background-color: rgb(245, 245, 245); /* Fundo suave */
+}
+
+/* Efeito de hover nos links */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+/* Estilo da descrição dos resultados */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem vertical */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: rgba(7, 63, 10, 0.98); /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Preenchimento interno */
+    width: 100%; /* Largura total */
+    font-size: 0.8rem; /* Tamanho do texto */
+}
+
+/* Estilo dos ícones sociais */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white; /* Cor dos ícones */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 0 10px; /* Margem horizontal */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.social-icons a:hover {
+    color: #FFD700; /* Cor amarela ao passar o mouse */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs */
+        padding: 0.8rem; /* Preenchimento interno */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados */
+        height: 40vh; /* Altura da caixa de resultados */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em celulares */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras */
+    }
+
+    section input {
+        width: 17rem; /* Largura dos inputs */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Preenchimento interno dos botões */
+        font-size: 0.9rem; /* Tamanho do texto */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados */
+        height: 50vh; /* Altura da caixa de resultados */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho do texto no rodapé */
+    }
+}
